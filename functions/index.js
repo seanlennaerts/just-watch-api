@@ -35,7 +35,7 @@ exports.getProviders = functions.https.onRequest((request, response) => {
         }
         resolve(show);
       }).catch((err) => {
-        show.provider = 'error';
+        show.provider = 'couldn\'t find :(';
         resolve(show);
       });
     }));
